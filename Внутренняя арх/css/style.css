@@ -563,7 +563,11 @@ header {
 }
 
 
-
+@media (min-width: 1600px)
+.logo_header {
+    width: 30%;
+    height: 50px;
+}
 
 @media (max-width: 1440px) {
     .menu {
