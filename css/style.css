@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lato&family=Ubuntu:wght@400;500;700&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -23,7 +24,7 @@ footer,
 header,
 aside {
     display: block;
-}
+}а
 html,
 body {
     width: 100%;
@@ -74,7 +75,22 @@ h6 {
     font-size: inherit;
     font-weight: 400;
 }
+
+
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url(/fonts/HindSiliguriLight.ttf);
+}
+@font-face {
+    font-family: 'Bitter';
+    src: url(/fonts/Bitter.ttf);
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url(/fonts/Nunito-ExtraLight.ttf);
+}
 header {
+    z-index: 10000;
     background-image: url(../img/Rectangle\ 4.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,10 +126,11 @@ header {
 }
 .menu a{
     text-decoration: none;
-    padding:10px 0 10px 0;
+    padding: 10px 0 10px 0;
     line-height: 20px;
 }
 .submenu a{
+    z-index: 10000;
     text-decoration: none;
 }
 
@@ -179,7 +196,6 @@ header {
     .menu {
         position: absolute;
         top: 0;
-        margin-top: 50px;
         left: 0;
         flex-direction: column;
         width: 100%;
@@ -222,6 +238,9 @@ header {
     #sm3 {
         display: none;
     }
+    .menu{
+        margin-top:9%;
+    }
 }
 
 .inner,
@@ -244,6 +263,7 @@ header {
     border-radius: 3px 3px 0px 0px;
 }
 .submenu {
+    z-index: 100;
     position: absolute;
     display: flex;
     justify-content: space-around;
@@ -257,8 +277,11 @@ header {
     padding: 20px 170px;
 }
 .submenu li:hover{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: #e3dddd;
 }
+
+
 
 .container {
     background-image: url(../img/bg.jpg);
@@ -266,9 +289,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.menu > li {
-    width: 100%;
-}
+
 .block1 {
     display: flex;
     justify-content: space-around;
@@ -457,18 +478,11 @@ header {
     width: 30%;
     height: 45px;
 }
+
+
+
 @media (min-width: 1600px) {
-    .logo_header {
-        width: 30%;
-        height: 50px;
-    }
-    .menu {
-        width: 90%;
-    }
-    .menu > li {
-        font-size: 26px;
-        line-height: 26px;
-    }
+
     .block1_body {
         height: 680px;
     }
@@ -490,7 +504,27 @@ header {
     .outside_text{
         padding-bottom: 10px;
     }
-    .seti {
+    .logo_header {
+        width: 30%;
+        height: 50px;
+    }
+    .menu {
+        width: 90%;
+    }
+    .menu > li {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .system_block{
+        bottom:180%;
+    }
+    .keyboard{
+        width:500px;
+        height:400px;
+        left:20%;
+        bottom:45%;
+    }
+    .seti{
         margin-left: 500px;
     }
 }
@@ -804,7 +838,6 @@ header {
     }
     .quote{
         font-size: 16px;
-        padding:16px auto;
     }
     .image_black {
         display: none;
